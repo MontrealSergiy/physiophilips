@@ -3,9 +3,7 @@ function physio_cli(in_dir, save_dir, varargin)
 % tapas_physio_main_create_regressors of the Physio (for Philips equipment)
 % This version target mostly Philips equipment 
 % and enables compilation and cbrain integration of physio.
-% While few tool parameters such as input files becames command line
-% parameters, the bulk of one hunderd of parameters and options are to be
-% provided in json file. User may dump his existing matlab json 
+% User may dump his existing matlab json 
 % physio structure into such file. Parameters can be set from
 % an exisiting example of config, provided by toolset. The command line
 % parameters have highest priority, than ones from the json file.
@@ -32,7 +30,7 @@ function physio_cli(in_dir, save_dir, varargin)
 %                    either preset defaults or paramfile are recommended
 %                    otherwise execution will fail
 %                    
-%                    also any physio parameters e.g. model.retroivoir.c 
+%                    also any physio structure parameters e.g. model.retroivoir.c 
 % EXAMPLES
 %
 %   phiwrap('myfiles_dir', 'results',...
